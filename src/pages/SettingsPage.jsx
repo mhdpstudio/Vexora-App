@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { FaCog, FaMoon, FaSun, FaPalette, FaSlidersH, FaSyncAlt, FaDownload } from "react-icons/fa";
+import pkg from "./../../package.json";
 import "./../renderer/src/assets/css/SettingsPage.css";
 
 const ACCENT_OPTIONS = [
@@ -10,11 +11,12 @@ const ACCENT_OPTIONS = [
 ];
 
 const LOCAL_STORAGE_KEY = "videos-app-settings";
+const UPDATE_MANIFEST_URL = "https://raw.githubusercontent.com/mhdpstudio/Vexora-App/main/update.json";
 
 const defaultSettings = {
     theme: "dark",
     accent: "#5fc945",
-    hover: "4fb137",
+    hover: "#4fb137",
     general: {
         autoResume: true,
         safeMode: false,
@@ -72,14 +74,44 @@ export default function SettingsPage() {
         setSettings(defaultSettings);
     }
 
-    function checkUpdates() {
+    function compareVersions(current, latest) {
+        const toNumbers = (value) => value.split(".").map((item) => parseInt(item, 10) || 0);
+        const [curMajor, curMinor, curPatch] = toNumbers(current);
+        const [latMajor, latMinor, latPatch] = toNumbers(latest);
+
+        if (latMajor !== curMajor) return latMajor > curMajor;
+        if (latMinor !== curMinor) return latMinor > curMinor;
+        return latPatch > curPatch;
+    }
+
+    async function checkUpdates() {
         setCheckingUpdates(true);
         setUpdateStatus("Checking for updates...");
-        setTimeout(() => {
-            setCheckingUpdates(false);
-            setUpdateStatus("Your app is up to date.");
+
+        try {
+            const response = await fetch(UPDATE_MANIFEST_URL, { cache: "no-store" });
+            if (!response.ok) throw new Error("Unable to fetch update manifest");
+
+            const manifest = await response.json();
+            const latestVersion = manifest.version || "0.0.0";
+            const isUpdateAvailable = compareVersions(pkg.version, latestVersion);
+
             setLastChecked(new Date().toLocaleString());
-        }, 1200);
+            setUpdateStatus(isUpdateAvailable ? `Update available: ${latestVersion}` : `App is up to date (${pkg.version})`);
+
+            if (manifest.notes) {
+                setCheckingUpdates(false);
+                return manifest;
+            }
+
+            return manifest;
+        } catch (error) {
+            setUpdateStatus("Unable to check updates. Please check your connection.");
+            setCheckingUpdates(false);
+            return null;
+        } finally {
+            setCheckingUpdates(false);
+        }
     }
 
     return (
