@@ -1,0 +1,12 @@
+.main-content{
+
+    position: fixed;
+
+    top: 42px;      /* ارتفاع الـ TitleBar */
+    left: 70px;     /* عرض الـ Sidebar */
+    right: 0;
+    bottom: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}

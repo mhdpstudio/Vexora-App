@@ -1,0 +1,207 @@
+{
+    "categories": [
+        {
+            "id": "comedy",
+            "title": "Comedy"
+        },
+        {
+            "id": "adventure",
+            "title": "Adventure"
+        },
+        {
+            "id": "action",
+            "title": "Action"
+        },
+        {
+            "id": "family",
+            "title": "Family"
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "title": "The Three Bears",
+            "description": "The lovable bear family finds themselves caught in a series of funny adventures while trying to win the 'Star of the Month' award. Filled with comedy, heartwarming moments, and colorful animation for the whole family.",
+            "thumbnail": "3-beers",
+            "date": "2026-06-29",
+            "time": "23:08",
+            "rating": 7.9,
+            "categories": [
+                "family"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://pub-e90ceed29c284bf3a7032502a3322a6c.r2.dev/three%20beers/",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 2,
+            "title": "Uncle Grandpa",
+            "description": "Uncle Grandpa travels the world in his magical RV, helping children solve unusual problems in the funniest and most unpredictable ways. Every adventure is packed with surreal humor and unforgettable characters.",
+            "thumbnail": "uncle-grandpa",
+            "date": "2026-06-29",
+            "time": "23:09",
+            "rating": 4.6,
+            "categories": [
+                "comedy"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://pub-e90ceed29c284bf3a7032502a3322a6c.r2.dev/Grand_pa/",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 3,
+            "title": "Tom and Jerry",
+            "description": "The legendary rivalry between Tom the cat and Jerry the clever mouse continues through endless chases, hilarious tricks, and timeless comedy that has entertained generations around the world.",
+            "thumbnail": "tom-and-jerry",
+            "date": "2026-06-29",
+            "time": "23:10",
+            "rating": 7.9,
+            "categories": [
+                "comedy"
+            ],
+            "episodesCount": 50,
+            "videoFolder": "https://pub-e90ceed29c284bf3a7032502a3322a6c.r2.dev/Tom%20and%20Jerry/",
+            "videoExtension": "mkv"
+        },
+        {
+            "id": 4,
+            "title": "SpongeBob SquarePants",
+            "description": "Join SpongeBob and his friends in Bikini Bottom as everyday jobs become hilarious adventures full of laughter, unforgettable moments, and classic cartoon fun beneath the sea.",
+            "thumbnail": "spongebob",
+            "date": "2026-06-29",
+            "time": "23:11",
+            "rating": 8.2,
+            "categories": [
+                "family"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 5,
+            "title": "Ninja Turtles",
+            "description": "Four mutant turtle brothers train in the art of ninjutsu and fight dangerous enemies lurking beneath New York City while protecting innocent people with courage, teamwork, and plenty of humor.",
+            "thumbnail": "ninja-turtles",
+            "date": "2026-06-29",
+            "time": "23:12",
+            "rating": 7.9,
+            "categories": [
+                "action"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 6,
+            "title": "The Amazing World Of Gumball",
+            "description": "Life in Elmore is anything but ordinary as Gumball and Darwin constantly find themselves in absurd situations filled with comedy, imagination, and unforgettable adventures.",
+            "thumbnail": "the-amazing-world-of-gumball",
+            "date": "2026-06-29",
+            "time": "23:13",
+            "rating": 8.4,
+            "categories": [
+                "comedy"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 7,
+            "title": "Clarence",
+            "description": "Clarence enjoys every day as a new adventure, discovering excitement in the smallest moments with his best friends while spreading positivity, imagination, and endless fun.",
+            "thumbnail": "clarence",
+            "date": "2026-06-29",
+            "time": "23:18",
+            "rating": 8.0,
+            "categories": [
+                "family"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 8,
+            "title": "Kung Fu Panda",
+            "description": "Po, an unlikely kung fu hero, must embrace his destiny and master the ancient art of kung fu while protecting the Valley of Peace alongside the legendary Furious Five.",
+            "thumbnail": "kung-fu-panda",
+            "date": "2026-06-30",
+            "time": "00:24",
+            "rating": 7.6,
+            "categories": [
+                "action"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 9,
+            "title": "Mr Bean",
+            "description": "Mr. Bean turns ordinary daily situations into unforgettable comedy through his unique personality, clever ideas, and hilarious misunderstandings that rarely go as planned.",
+            "thumbnail": "mr-bean",
+            "date": "2026-06-30",
+            "time": "01:05",
+            "rating": 6.9,
+            "categories": [
+                "comedy"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 10,
+            "title": "Regular Show",
+            "description": "Mordecai and Rigby are two carefree friends whose simple jobs constantly spiral into bizarre adventures involving monsters, magic, time travel, and plenty of unforgettable comedy.",
+            "thumbnail": "regular-show",
+            "date": "2026-06-30",
+            "time": "01:08",
+            "rating": 8.5,
+            "categories": [
+                "adventure"
+            ],
+            "episodesCount": 2,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 11,
+            "title": "Adventure Time",
+            "description": "Finn the Human and Jake the Dog journey across the magical Land of Ooo, facing strange creatures, powerful villains, and unforgettable adventures while protecting their friends.",
+            "thumbnail": "adventure-time",
+            "date": "2026-06-30",
+            "time": "01:12",
+            "rating": 8.6,
+            "categories": [
+                "adventure"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        },
+        {
+            "id": 12,
+            "title": "Ratatouille",
+            "description": "A gifted young rat named Remy dreams of becoming one of Paris' greatest chefs, proving that passion, talent, and determination can come from the most unexpected places.",
+            "thumbnail": "ratatouille",
+            "date": "2026-06-30",
+            "time": "02:11",
+            "rating": 8.1,
+            "categories": [
+                "family"
+            ],
+            "episodesCount": 1,
+            "videoFolder": "https://...../",
+            "videoExtension": "mp4"
+        }
+    ],
+    "featured": [
+        11,
+        10,
+        12
+    ]
+}

@@ -1,0 +1,74 @@
+@import "./constants/colors.css";
+@import "./constants/fonts.css";
+
+.titlebar{
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+
+    background:var(--surface);
+    border-bottom:1px solid var(--border);
+
+    user-select:none;
+
+    -webkit-app-region:drag;
+}
+
+.titlebar-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding-left: 14px;
+
+    color:var(--text);
+
+    font-weight:600;
+    font-size:14px;
+}
+
+.logo{
+    font-family: "Roboto", sans-serif;
+    color:var(--primary);
+    font-size:18px;
+    width: 38px;
+}
+
+.titlebar-right{
+    display:flex;
+    align-items:center;
+
+    -webkit-app-region:no-drag;
+}
+
+.tb-btn{
+    width:42px;
+    height:42px;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    color:var(--text-secondary);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.tb-btn:hover{
+    background:var(--surface-hover);
+    color:var(--text);
+}
+
+.tb-btn.close:hover{
+    background:#e81123;
+    color:white;
+}

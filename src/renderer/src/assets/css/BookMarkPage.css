@@ -1,0 +1,115 @@
+/* Bookmark page card styles */
+.bookmark-container {
+  padding: 24px;
+}
+
+.bookmark-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.bookmark-empty {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 120px);
+  box-sizing: border-box;
+}
+
+.bookmark-empty-icon {
+  font-size: 88px;
+  color: var(--text-secondary, #9aa3b2);
+  opacity: 0.14;
+}
+
+.bookmark-empty-title {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bookmark-empty-sub {
+  margin-top: 8px;
+  color: var(--text-secondary, #9aa3b2);
+}
+
+.bookmark-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0, 0, 0, 0.397));
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.16);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+
+.bookmark-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.24);
+}
+
+.bookmark-thumb {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+.B-text{
+    margin-bottom: 12px;
+}
+
+.bookmark-body {
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.bookmark-meta {
+  flex: 1 1 auto;
+}
+
+.bookmark-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.bookmark-sub {
+  color: var(--text-secondary, #9aa3b2);
+  font-size: 12px;
+}
+
+.bookmark-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.bookmark-action-btn {
+  border: none;
+  background: rgba(14, 14, 14, 0.678);
+  color: inherit;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark-action-btn:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+@media (max-width: 480px) {
+  .bookmark-body { padding: 10px; }
+  .bookmark-title { font-size: 13px; }
+}

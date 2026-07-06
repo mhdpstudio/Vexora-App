@@ -1,0 +1,77 @@
+@import "./constants/colors.css";
+@import "./constants/fonts.css";
+
+.sidebar{
+    position: fixed;
+
+    top: 42px;
+    left: 0;
+    bottom: 0;
+
+    width: 70px;
+
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 18px 0;
+}
+
+.sidebar-center{
+    flex: 1;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.sidebar-bottom{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+}
+
+.sidebar-btn{
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: transparent;
+
+    color: var(--text-secondary);
+    font-size: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
+}
+
+.sidebar-btn:hover{
+    background: var(--surface-hover);
+    color: var(--text);
+}
+
+.sidebar-btn.active{
+    background: var(--primary);
+    color: white;
+}
